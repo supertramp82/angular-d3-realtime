@@ -45,6 +45,10 @@ function updateMarket() {
     open,
     close
   });
+
+  console.log(marketPositions);
+  console.log('\n\n\n');
+
   counter++;
 }
 

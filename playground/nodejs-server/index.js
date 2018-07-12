@@ -21,7 +21,7 @@ app.get('/api/market', (req, res) => {
 setInterval(function() {
   market.updateMarket();
   io.sockets.emit('market', market.marketPositions[0]);
-});
+}, 5000);
 
 io.on('connection', function() {
   console.log('a user connected');
